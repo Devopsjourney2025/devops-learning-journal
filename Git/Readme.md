@@ -53,7 +53,9 @@ git fetch                     # Download objects and refs from another repositor
 git merge <branch>            # Merge a branch into your current branch
 git pull                      # Fetch and merge changes from the remote repository
 ```
-> ![Example workflow](image.png)
+>
+
+<img width="1006" height="438" alt="Git" src="https://github.com/user-attachments/assets/89e62a8a-9d6b-408d-9d8e-647a6a4e0620" />
 
 - Use `git remote -v` to verify your repository is connected to GitHub.
 - `git clone <repo-url>` copies a remote repository to your local machine.
