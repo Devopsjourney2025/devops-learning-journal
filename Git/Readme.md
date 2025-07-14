@@ -168,6 +168,9 @@ git cherry-pick --abort
 | `git cherry-pick --abort`                | Abort the cherry-pick operation         |
 
 
+## Working with resetting and reverting
+
+<img width="1107" height="672" alt="image" src="https://github.com/user-attachments/assets/a7cc546d-28fa-4461-8f91-5704541dc71a" />
 
 Follow the instructions in your editor to pick, squash, or edit commits as needed.
 - Write clear, descriptive commit messages.
