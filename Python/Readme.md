@@ -38,7 +38,8 @@ print("World!")
 Literals:
 Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
-<img width="307" height="149" alt="Literals" src="https://github.com/user-attachments/assets/c4b46fe5-bd5b-46fa-a075-b0293d58102f" />
+![Alt Text](images/Literals.png)
+
 
 Operators:
 Arithmetic operators -7:
