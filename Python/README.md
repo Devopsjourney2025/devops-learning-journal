@@ -40,6 +40,8 @@ Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
 
 ![Literals](Images\Literals.png)
+![Uploading Literals.png…]()
+
 
 Operators:
 Arithmetic operators -7:
