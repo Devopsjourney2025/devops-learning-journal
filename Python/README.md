@@ -39,7 +39,7 @@ Literals:
 Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
 
-![Alt text](https://github.com/Devopsjourney2025/devops-learning-journal/blob/main/Python/Literals.png?raw=true)
+![Literals](./Literals.png)
 
 
 
