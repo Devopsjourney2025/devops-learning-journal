@@ -38,14 +38,17 @@ print("World!")
 Literals:
 Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
+
 ![Literals](Images/Literals.png)
 Operators:
 Arithmetic operators -7:
+
 ![Arithmetic Operators](Images/Arithmetic_operators.png)
 
 Exponentials - ** (2**3)
 Modulo – 5%2 =1 (provides reminder after division)
 Unary and Binary operators:
+
  ![Unary and Binary Operators](Images/Unary-binary.png)
 
 
