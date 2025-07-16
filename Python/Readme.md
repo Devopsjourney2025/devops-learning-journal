@@ -38,16 +38,16 @@ print("World!")
 Literals:
 Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
-<img width="384" height="186" alt="image" src="https://github.com/user-attachments/assets/184bf0c0-18fc-4370-832c-6bd1c705ceea" />
+<img width="307" height="149" alt="Literals" src="https://github.com/user-attachments/assets/c4b46fe5-bd5b-46fa-a075-b0293d58102f" />
+
 Operators:
 Arithmetic operators -7:
- 
+ <img width="372" height="136" alt="Arithmetic_operators" src="https://github.com/user-attachments/assets/da5cb9ec-e947-461f-8304-2abdebcc0134" />
 Exponentials - ** (2**3)
 Modulo – 5%2 =1 (provides reminder after division)
 Unary and Binary operators:
- <img width="487" height="289" alt="image" src="https://github.com/user-attachments/assets/eaab4d0d-3a33-4a98-8527-79602f867584" />
-
-
+ 
+<img width="389" height="231" alt="Unary-binary" src="https://github.com/user-attachments/assets/c96db4bf-0c03-4c85-a205-ec2a4e47cd51" />
 
 📌 2. Variables in Python
 ✅ What is a Variable?
