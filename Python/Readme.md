@@ -38,17 +38,15 @@ print("World!")
 Literals:
 Integers – without fraction (200,100023,-90,1_000_000)
 Octal Number – 0o123
-![Literals](Python/images/Literals.png)
-
-
+![Literals](Python/Images/Literals.png)
 Operators:
 Arithmetic operators -7:
-![Arithmetic Operators](Python/images/Arithmetic_operators.png)
+![Arithmetic Operators](Python/Images/Arithmetic_operators.png)
 
 Exponentials - ** (2**3)
 Modulo – 5%2 =1 (provides reminder after division)
 Unary and Binary operators:
- ![Unary and Binary Operators](Python/images/Unary-binary.png)
+ ![Unary and Binary Operators](Python/Images/Unary-binary.png)
 
 
 
