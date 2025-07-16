@@ -171,7 +171,50 @@ git cherry-pick --abort
 ## Working with resetting and reverting
 
 <img width="1107" height="672" alt="image" src="https://github.com/user-attachments/assets/a7cc546d-28fa-4461-8f91-5704541dc71a" />
+### Resetting and Reverting Commits
 
+| Command                              | Purpose                                                      |
+|---------------------------------------|--------------------------------------------------------------|
+| `git revert <commit-id>`              | Create a new commit that undoes the changes from a specific commit |
+| `git reset --soft HEAD~1`             | Move HEAD back by one commit, keep changes staged            |
+| `git reset --hard HEAD~1`             | Move HEAD back by one commit, discard all changes            |
+
+- Use `git revert <commit-id>` to safely undo a commit without rewriting history.
+- `git reset --soft HEAD~1` undoes the last commit but keeps your changes staged for recommit.
+- `git reset --hard HEAD~1` completely removes the last commit and any changes—use with caution!
+
+## Working with Stash
+
+Stashing lets you temporarily save changes that you’re not ready to commit. This is useful if you need to switch branches or pull updates without losing your current work.
+
+```bash
+git stash                # Save your uncommitted changes
+git stash list           # Show a list of stashed changes
+git stash show           # Display details of the latest stash
+git stash pop            # Apply the latest stash and remove it from the stash list
+git stash apply <stash@{n}> # Apply a specific stash without removing it
+git stash drop <stash@{n}>  # Remove a specific stash from the list
+```
+
+- Use `git stash` to save your work-in-progress.
+- `git stash pop` restores the most recent stash and removes it from the stash list.
+- `git stash list` shows all stashed changes.
+- `git stash show` displays what’s inside the latest stash.
+- You can reference a specific stash using its identifier, like `stash@{0}`.
+
+## Working with Reflog
+### Undoing a Hard Reset
+
+If you've performed a hard reset and want to recover lost commits, you can use the reflog to find the previous commit and restore it:
+
+```bash
+git reflog                   # Show a log of all recent HEAD positions
+git reset --hard <commit-id> # Restore to the desired commit from the reflog
+```
+- Use `git reflog` to identify the commit you want to recover.
+- Then run `git reset --hard <commit-id>` to restore your repository to that state.
+
+## Working 
 Follow the instructions in your editor to pick, squash, or edit commits as needed.
 - Write clear, descriptive commit messages.
 - Always pull before pushing to avoid conflicts.
