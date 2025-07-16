@@ -35,6 +35,20 @@ Edit
 print("Hello", end=" ")
 print("World!")
 # Output: Hello World!
+Literals:
+Integers – without fraction (200,100023,-90,1_000_000)
+Octal Number – 0o123
+<img width="384" height="186" alt="image" src="https://github.com/user-attachments/assets/184bf0c0-18fc-4370-832c-6bd1c705ceea" />
+Operators:
+Arithmetic operators -7:
+ 
+Exponentials - ** (2**3)
+Modulo – 5%2 =1 (provides reminder after division)
+Unary and Binary operators:
+ <img width="487" height="289" alt="image" src="https://github.com/user-attachments/assets/eaab4d0d-3a33-4a98-8527-79602f867584" />
+
+
+
 📌 2. Variables in Python
 ✅ What is a Variable?
 A name used to store a value in memory.
