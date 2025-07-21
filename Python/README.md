@@ -1,4 +1,3 @@
- HEAD
 # 🐍 Python Learning Journal
 
 ## 📌 1. `print()` – Built-in Function
@@ -111,7 +110,3 @@ python
 Copy
 Edit
 print(type(age))  # <class 'int'>
-=======
-# devops-learning-journal
-My daily DevOps learning progress
->>>>>>> dfd5435b7c30cfdc3e49bb401e5b9c69f0386cf5
