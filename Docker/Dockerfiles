@@ -1,0 +1,82 @@
+🐳 Breaking Down the Dockerfile
+A Dockerfile is a plain text script containing a series of instructions that Docker uses to build a container image. Each instruction creates a new image layer, and these layers form the final container image.
+
+🔍 Dockerfile Instructions (Explained)
+🧱 FROM
+Dockerfile
+FROM ubuntu
+Sets the base image for the container.
+
+Must be the first instruction in any Dockerfile.
+
+Here, it uses the official Ubuntu image from Docker Hub.
+
+⚙️ RUN
+Dockerfile
+RUN apt-get update && apt-get install -y python3-pip
+Executes shell commands inside the image.
+
+Used for installing software, setting permissions, etc.
+
+Chaining commands with && keeps the image lean by reducing unnecessary layers.
+
+📁 COPY
+Dockerfile
+COPY ./src /opt/source-code
+Copies files/directories from your local machine into the image.
+
+Here, the source code is copied into /opt/source-code inside the container.
+
+🚀 ENTRYPOINT
+Dockerfile
+ENTRYPOINT ["flask", "run", "--host=0.0.0.0"]
+Specifies the default command to run when the container starts.
+
+Often used for launching applications or scripts.
+
+In some setups, you may also see environment variables set like:
+
+Dockerfile
+
+ENV FLASK_APP=/opt/source-code/app.py
+📚 Docker’s Layered Architecture
+Each Dockerfile instruction creates a new layer in the image:
+
+Base layer (Ubuntu OS)
+
+APT package updates & installations
+
+Python package installations (via pip)
+
+Copying source code
+
+Setting the entrypoint
+
+This architecture:
+
+Enables caching and reusability
+
+Makes builds faster after the first time
+
+Helps minimize storage by only saving changes per layer
+
+You can inspect layers using:
+docker history <image_name>
+# Example:
+docker history accountname/my-custom-app
+🏗️ Building Your Docker Image
+To build your image from a Dockerfile:
+
+docker build -t accountname/my-custom-app .
+-t adds a tag (name:version).
+
+. refers to the current directory, where your Dockerfile lives.
+
+✅ Best Practices
+Minimize RUN layers using command chaining: RUN apt-get update && apt-get install -y ...
+
+Use .dockerignore to avoid copying unnecessary files into the image.
+
+Combine COPY and RUN efficiently to reduce final image size.
+
+
