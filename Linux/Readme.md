@@ -13,6 +13,7 @@
 | **Scripting**       | Bash basics: loops, conditionals, arguments      | `if`, `for`, `$1`, `case`, `functions`                    |
 | **Crontab & Jobs**  | Scheduling, timing syntax                        | `crontab -e`, `at`, `cron`                                |
 
+Unregister WSL from Windows - **wsl --unregister Ubuntu-24.04**
 Linux Core Topics for DevOps
 1️⃣ Linux Basics & Filesystem
 Directory structure (/bin, /etc, /var, /home, /tmp, /opt)
